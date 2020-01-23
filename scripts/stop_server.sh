@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -X POST 15.206.186.139:8081/shutdown
+sudo fuser -k 8081/tcp

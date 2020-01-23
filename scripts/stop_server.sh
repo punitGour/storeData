@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -X POST localhost:8081/shutdown
+curl -X POST 15.206.186.139:8081/shutdown

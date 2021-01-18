@@ -31,8 +31,7 @@ spec:
       - image: mysql
         name: mysqldb
         env:
-          # Use secret in real usage
         - name: MYSQL_ROOT_PASSWORD
-          value: root
+          value: pass
         ports:
         - containerPort: 3306

@@ -21,9 +21,9 @@ public class BooksRepositoryTest {
 	@Test
 	@Rollback(false)
 	public void testCreateBooks() {
-//	    Books books = repo.save(new Books("1", "linux", "20", "punit", "2000", "20", "new"));
-//	     
-//	    assertThat(books.getID()).isEqualTo("1");
+	    Books books = repo.save(new Books("1", "linux", "20", "punit", "2000", "20", "new"));
+	     
+	    assertThat(books.getID()).isEqualTo("1");
 	}
 
 }

@@ -120,7 +120,6 @@
                 </executions>
             </plugin> -->
 			
-		[12:06 PM] Ruchika Dhnyaneshwar Raghorte
      <plugin>
         <!-- Code coverage plugin. -->
         <!-- This sets up code coverage for the unit tests, the integration tests, -->

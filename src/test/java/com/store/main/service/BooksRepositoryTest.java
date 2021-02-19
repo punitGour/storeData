@@ -32,5 +32,18 @@ public class BooksRepositoryTest {
         Product product = repo.findByName("iPhone 10");    
         assertThat(product.getName()).isEqualTo("iPhone 10");
 	}
+	
+	@Test
+	@Rollback(false)
+	public void testDeleteStudent() {
+	    Books books = repo.findByName("linux");
+
+	    repo.deleteById(books.getId());
+
+	    Books deletedBook = repo.findByName("linux");
+
+	    assertThat(deletedProduct).isNull();       
+
+	}
 
 }

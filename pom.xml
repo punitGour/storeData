@@ -127,7 +127,7 @@
         <!-- After running a `mvn clean install`, open `target/site/jacoco-both/index.html` in a browser. -->
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>${​​​​​​​jacoco.plugin.version}​​​​​​​</version>
+        <version>${jacoco.plugin.version}</version>
         <executions>
           <execution>
             <id>jacoco-prepare-agent</id>
@@ -166,13 +166,13 @@
             <configuration>
               <fileSets>
                 <fileSet>
-                  <directory>${​​​​​​​project.build.directory}​​​​​​​</directory>
+                  <directory>${project.build.directory}</directory>
                   <includes>
                     <include>*.exec</include>
                   </includes>
                 </fileSet>
               </fileSets>
-              <destFile>${​​​​​​​project.build.directory}​​​​​​​/jacoco-both.exec</destFile>
+              <destFile>${project.build.directory}/jacoco-both.exec</destFile>
             </configuration>
           </execution>
           <execution>
@@ -187,8 +187,8 @@
               <goal>report</goal>
             </goals>
             <configuration>
-              <dataFile>${​​​​​​​project.build.directory}​​​​​​​/jacoco-both.exec</dataFile>
-              <outputDirectory>${​​​​​​​project.reporting.outputDirectory}​​​​​​​/jacoco-both</outputDirectory>
+              <dataFile>${project.build.directory}/jacoco-both.exec</dataFile>
+              <outputDirectory>${project.reporting.outputDirectory}/jacoco-both</outputDirectory>
             </configuration>
           </execution>
         </executions>

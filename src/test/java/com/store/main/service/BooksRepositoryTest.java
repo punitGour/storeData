@@ -26,12 +26,12 @@ public class BooksRepositoryTest {
 	    assertThat(books.getID()).isEqualTo("1");
 	}
 	
-	@Test
-	@Rollback(false)
-	public void testFindProductByName() {
-        Product product = repo.findByName("iPhone 10");    
-        assertThat(product.getName()).isEqualTo("iPhone 10");
-	}
+// 	@Test
+// 	@Rollback(false)
+// 	public void testFindProductByName() {
+//         Books product = repo.findByName("iPhone 10");    
+//         assertThat(product.getName()).isEqualTo("iPhone 10");
+// 	}
 	
 	@Test
 	@Rollback(false)

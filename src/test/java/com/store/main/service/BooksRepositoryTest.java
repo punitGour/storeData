@@ -33,17 +33,17 @@ public class BooksRepositoryTest {
 //         assertThat(product.getName()).isEqualTo("iPhone 10");
 // 	}
 	
-	@Test
-	@Rollback(false)
-	public void testDeleteStudent() {
-	    Books books = repo.findByName("linux");
+// 	@Test
+// 	@Rollback(false)
+// 	public void testDeleteStudent() {
+// 	    Books books = repo.findByName("linux");
 
-	    repo.deleteById(books.getId());
+// 	    repo.deleteById(books.getId());
 
-	    Books deletedBook = repo.findByName("linux");
+// 	    Books deletedBook = repo.findByName("linux");
 
-	    assertThat(deletedProduct).isNull();       
+// 	    assertThat(deletedProduct).isNull();       
 
-	}
+// 	}
 
 }
